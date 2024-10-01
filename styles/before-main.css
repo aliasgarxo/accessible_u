@@ -84,3 +84,12 @@ a:hover, a:focus, input:focus {
   outline: none;
   border-color: transparent;
 }
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff; 
+}
+
+.navbar-dark {
+  background-color: #0056b3; 
+}
