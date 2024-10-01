@@ -86,7 +86,7 @@ a:hover, a:focus, input:focus {
 }
 
 
-.navbar-dark .navbar-nav .nav-link {
+.nav-link {
   color: #ffffff; 
 }
 
