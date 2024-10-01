@@ -86,10 +86,11 @@ a:hover, a:focus, input:focus {
 }
 
 
-.nav-link {
-  color: #ffffff; 
+.navbar-dark {
+  background-color: #003366; 
 }
 
-.navbar-dark {
-  background-color: #0056b3; 
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
 }
+
