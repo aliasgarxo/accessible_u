@@ -37,3 +37,23 @@
 //     }
 //   }
 // });
+
+// Dropdown accessibility via Enter key
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+  
+    dropdowns.forEach(dropdown => {
+      const trigger = dropdown.querySelector('.dropdown-toggle');
+      const menu = dropdown.querySelector('.dropdown-menu');
+  
+      // Toggle dropdown menu on Enter key
+      trigger.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+          event.preventDefault(); // Prevent default link behavior
+          menu.classList.toggle('show'); // Toggle dropdown visibility
+          trigger.setAttribute('aria-expanded', menu.classList.contains('show')); // Update ARIA attribute
+        }
+      });
+    });
+  });
+  
